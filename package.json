@@ -1,0 +1,48 @@
+{
+  "name": "luat-ltv",
+  "version": "1.0.0",
+  "description": "Website tư vấn luật LTV",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "kill-port": "npx kill-port 3000",
+    "clean-start": "npm run kill-port && npm run dev",
+    "start": "node server.js",
+    "setup": "node src/scripts/createAdmin.js",
+    "create-admin": "node src/scripts/createAdmin.js",
+    "seed-posts": "node src/scripts/seedPosts.js",
+    "check-posts": "node src/scripts/checkPosts.js",
+    "check-system": "node src/scripts/systemCheck.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "gh-pages": "^6.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.15.1",
+    "multer": "^2.0.0",
+    "nodemailer": "^6.9.7",
+    "path": "^0.12.7",
+    "sass": "^1.88.0",
+    "sharp": "^0.34.2",
+    "sitemap": "^8.0.0",
+    "slugify": "^1.6.6",
+    "uuid": "^11.1.0",
+    "vite": "^6.3.5",
+    "vite-plugin-ejs": "^1.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

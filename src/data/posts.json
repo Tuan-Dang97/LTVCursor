@@ -1,0 +1,41 @@
+[
+    {
+        "id": "dang-ky-nhan-hieu",
+        "title": "Hướng dẫn đăng ký nhãn hiệu từ A-Z: Quy trình, thủ tục và chi phí",
+        "description": "Hướng dẫn chi tiết về quy trình, thủ tục và chi phí đăng ký nhãn hiệu tại Việt Nam năm 2025",
+        "content": "content/dang-ky-nhan-hieu.md",
+        "thumbnail": "/img/bannerfix/dang-ky-bao-ho-nhan-hieu.webp",
+        "categories": ["Sở hữu trí tuệ", "Nhãn hiệu"],
+        "author": "Luật sư Nguyễn Văn A",
+        "publishDate": "2025-03-15",
+        "lastModified": "2025-03-15",
+        "url": "/bai-viet/dang-ky-nhan-hieu",
+        "tags": ["nhãn hiệu", "đăng ký", "sở hữu trí tuệ", "thương hiệu"]
+    },
+    {
+        "id": "dang-ky-ban-quyen",
+        "title": "Thủ tục cấp giấy chứng nhận đăng ký bản quyền tác giả",
+        "description": "Hướng dẫn đầy đủ về thủ tục đăng ký bản quyền tác giả, quyền liên quan tại Việt Nam",
+        "content": "content/dang-ky-ban-quyen.md",
+        "thumbnail": "/img/bannerfix/dang-ky-ban-quyen-tac-gia.webp",
+        "categories": ["Sở hữu trí tuệ", "Bản quyền"],
+        "author": "Luật sư Trần Thị B",
+        "publishDate": "2025-03-10",
+        "lastModified": "2025-03-10",
+        "url": "/bai-viet/dang-ky-ban-quyen",
+        "tags": ["bản quyền", "tác giả", "sở hữu trí tuệ", "đăng ký"]
+    },
+    {
+        "id": "thanh-lap-cong-ty",
+        "title": "Hướng dẫn thủ tục thành lập công ty 2025",
+        "description": "Quy trình và thủ tục đầy đủ để thành lập công ty mới tại Việt Nam năm 2025",
+        "content": "content/thanh-lap-cong-ty.md",
+        "thumbnail": "/img/bannerfix/thanh-lap-doanh-nghiep.webp",
+        "categories": ["Doanh nghiệp", "Thành lập công ty"],
+        "author": "Luật sư Lê Văn C",
+        "publishDate": "2025-03-01",
+        "lastModified": "2025-03-01",
+        "url": "/bai-viet/thanh-lap-cong-ty",
+        "tags": ["thành lập công ty", "doanh nghiệp", "đăng ký kinh doanh"]
+    }
+] 

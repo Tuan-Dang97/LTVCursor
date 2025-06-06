@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Câu chuyện khách hàng - Luật LTV" />
+        <title>Câu Chuyện Khách Hàng - Luật LTV</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/client-stores.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+      <script type="module" crossorigin src="/LTVLaw-12-5-2025/assets/main-Ds9_Q7QR.js"></script>
+      <link rel="stylesheet" crossorigin href="/LTVLaw-12-5-2025/assets/main-Cye3Qnzz.css">
+    </head>
+    <body>
+        <!-- Phần header với logo và menu -->
+        <header>
+    <div class="top-bar">
+        <div class="container">
+            <address class="contact-info">
+                <span
+                    ><i class="fas fa-phone" aria-hidden="true"></i>
+                    <a href="tel:0977616391">0977616391</a></span
+                >
+                <span
+                    ><i class="fas fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:info@ltvlaw.com">info@ltvlaw.com</a></span
+                >
+                <span
+                    ><i class="far fa-clock" aria-hidden="true"></i> Thứ Hai -
+                    Thứ Bảy 7:30 - 17:30</span
+                >
+            </address>
+        </div>
+    </div>
+    <div class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img
+                        src="./image/thanh-lap-cong-ty-co-phan.jpg"
+                        alt="Luật LTV Logo"
+                    />
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">VỀ LUẬT LTV</a></li>
+                    <li class="has-submenu">
+                        <a href="#"
+                            >ĐỘI NGŨ LUẬT SƯ <i class="fas fa-chevron-down"></i
+                        ></a>
+                        <ul class="submenu">
+                            <li><a href="#">Nhân Sự Pháp Lý</a></li>
+                            <li><a href="#">Nhân Sự Vận Hành</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">DỊCH VỤ</a></li>
+                    <li><a href="#">LĨNH VỰC</a></li>
+                    <li><a href="#">KIẾN THỨC</a></li>
+                    <li><a href="#">TUYỂN DỤNG</a></li>
+                    <li><a href="#">LIÊN HỆ</a></li>
+                    <li class="language">
+                        <a href="#"
+                            ><img
+                                src="./image/thanh-lap-cong-ty-co-phan.jpg"
+                                alt="Tiếng Việt"
+                        /></a>
+                        <a href="#"
+                            ><img
+                                src="./image/thanh-lap-cong-ty-co-phan.jpg"
+                                alt="English"
+                        /></a>
+                        <a href="#"
+                            ><img
+                                src="./image/thanh-lap-cong-ty-co-phan.jpg"
+                                alt="中文"
+                        /></a>
+                    </li>
+                    <li class="search-icon">
+                        <a href="#"
+                            ><i class="fas fa-search" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+        <main>
+            <!-- Banner câu chuyện khách hàng -->
+            <section class="client-banner">
+                <div class="container">
+                    <div class="banner-content">
+                        <h1>Câu chuyện khách hàng</h1>
+                        <p>
+                            Cùng lắng nghe hành trình chạm đến thành công của
+                            các đối tác tin tưởng đồng hành cùng Luật LTV
+                        </p>
+                        <div class="banner-buttons">
+                            <a href="#" class="btn-experience"
+                                >Trải nghiệm dịch vụ</a
+                            >
+                            <a href="#" class="btn-consult">Tư vấn ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bộ lọc khách hàng -->
+            <section class="client-filter">
+                <div class="container">
+                    <div class="filter-wrapper">
+                        <div class="filter-title">
+                            <h3>Tiêu điểm khách hàng</h3>
+                        </div>
+                        <div class="filter-options">
+                            <div class="filter-group">
+                                <label for="client-type">Loại hình:</label>
+                                <select id="client-type" class="filter-select">
+                                    <option value="all">All</option>
+                                    <option value="business">
+                                        Doanh nghiệp
+                                    </option>
+                                    <option value="individual">Cá nhân</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label for="service-field">Lĩnh vực:</label>
+                                <select
+                                    id="service-field"
+                                    class="filter-select"
+                                >
+                                    <option value="all">All</option>
+                                    <option value="corporate">
+                                        Doanh nghiệp
+                                    </option>
+                                    <option value="ip">Sở hữu trí tuệ</option>
+                                    <option value="dispute">Tranh chấp</option>
+                                    <option value="labor">Lao động</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Danh sách khách hàng -->
+            <section class="client-stories">
+                <div class="container">
+                    <div class="clients-grid">
+                        <!-- Khách hàng 1 -->
+                        <div class="client-card">
+                            <div class="client-image">
+                                <img
+                                    src="./images/clients/client1.jpg"
+                                    alt="Bamboo Airways"
+                                />
+                                <div class="client-category">
+                                    <span class="category-tag">Dịch vụ</span>
+                                </div>
+                            </div>
+                            <div class="client-info">
+                                <h3>Bamboo Airways</h3>
+                                <p>
+                                    Bamboo Airways tìm thấy sự tối ưu, tiếp cận
+                                    khách hàng nhanh hơn với Luật LTV.
+                                </p>
+                                <a href="#" class="btn-details"
+                                    >Cách LTV thực hiện</a
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Khách hàng 2 -->
+                        <div class="client-card">
+                            <div class="client-image">
+                                <img
+                                    src="./images/clients/client2.jpg"
+                                    alt="Saigon Sneaker"
+                                />
+                                <div class="client-category">
+                                    <span class="category-tag">Thể thao</span>
+                                </div>
+                            </div>
+                            <div class="client-info">
+                                <h3>Saigon Sneaker</h3>
+                                <p>
+                                    Saigon Sneaker thực đẩy cạnh tranh, dẫn đầu
+                                    xu thế cùng Luật LTV.
+                                </p>
+                                <a href="#" class="btn-details"
+                                    >Cách LTV thực hiện</a
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Khách hàng 3 -->
+                        <div class="client-card">
+                            <div class="client-image">
+                                <img
+                                    src="./images/clients/client3.jpg"
+                                    alt="ImmiCa"
+                                />
+                                <div class="client-category">
+                                    <span class="category-tag">Du học</span>
+                                </div>
+                            </div>
+                            <div class="client-info">
+                                <h3>ImmiCa</h3>
+                                <p>
+                                    ImmiCa Việt Nam, đơn vị hàng đầu Việt Nam
+                                    hoạt động trong lĩnh vực Định cư Di trú Mỹ
+                                    đã đồng hành cùng Luật LTV.
+                                </p>
+                                <a href="#" class="btn-details"
+                                    >Cách LTV thực hiện</a
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Khách hàng 4 -->
+                        <div class="client-card">
+                            <div class="client-image">
+                                <img
+                                    src="./images/clients/client4.jpg"
+                                    alt="Housedesign"
+                                />
+                                <div class="client-category">
+                                    <span class="category-tag"
+                                        >Thiết kế nội thất</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="client-info">
+                                <h3>Housedesign</h3>
+                                <p>
+                                    Được thành lập từ năm 2015, Housedesign hoạt
+                                    động với sứ mệnh tạo ra các công trình thật
+                                    sự mang lại giá trị cho khách hàng.
+                                </p>
+                                <a href="#" class="btn-details"
+                                    >Cách LTV thực hiện</a
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Khách hàng 5 -->
+                        <div class="client-card">
+                            <div class="client-image">
+                                <img
+                                    src="./images/clients/client5.jpg"
+                                    alt="Công ty Đồng Gỗ"
+                                />
+                                <div class="client-category">
+                                    <span class="category-tag">Sản xuất</span>
+                                </div>
+                            </div>
+                            <div class="client-info">
+                                <h3>Công ty Đồng Gỗ</h3>
+                                <p>
+                                    Từ một công ty nhỏ đến doanh nghiệp xuất
+                                    khẩu hàng đầu với sự hỗ trợ từ Luật LTV.
+                                </p>
+                                <a href="#" class="btn-details"
+                                    >Cách LTV thực hiện</a
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Khách hàng 6 -->
+                        <div class="client-card">
+                            <div class="client-image">
+                                <img
+                                    src="./images/clients/client6.jpg"
+                                    alt="ABC Gaming"
+                                />
+                                <div class="client-category">
+                                    <span class="category-tag">Công nghệ</span>
+                                </div>
+                            </div>
+                            <div class="client-info">
+                                <h3>ABC Gaming</h3>
+                                <p>
+                                    Bảo vệ bản quyền game và xây dựng thương
+                                    hiệu mạnh mẽ với dịch vụ sở hữu trí tuệ của
+                                    LTV.
+                                </p>
+                                <a href="#" class="btn-details"
+                                    >Cách LTV thực hiện</a
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Khách hàng 7 -->
+                        <div class="client-card">
+                            <div class="client-image">
+                                <img
+                                    src="./images/clients/client7.jpg"
+                                    alt="Wato Shipping"
+                                />
+                                <div class="client-category">
+                                    <span class="category-tag">Logistics</span>
+                                </div>
+                            </div>
+                            <div class="client-info">
+                                <h3>Wato Shipping</h3>
+                                <p>
+                                    Doanh nghiệp vận tải biển quốc tế được tư
+                                    vấn pháp lý toàn diện và hiệu quả.
+                                </p>
+                                <a href="#" class="btn-details"
+                                    >Cách LTV thực hiện</a
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Khách hàng 8 -->
+                        <div class="client-card">
+                            <div class="client-image">
+                                <img
+                                    src="./images/clients/client8.jpg"
+                                    alt="DTE Solutions"
+                                />
+                                <div class="client-category">
+                                    <span class="category-tag">Phần mềm</span>
+                                </div>
+                            </div>
+                            <div class="client-info">
+                                <h3>DTE Solutions</h3>
+                                <p>
+                                    Startup công nghệ thành công trong việc gọi
+                                    vốn và mở rộng thị trường quốc tế với LTV.
+                                </p>
+                                <a href="#" class="btn-details"
+                                    >Cách LTV thực hiện</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phân trang -->
+                    <div class="pagination">
+                        <a href="#" class="page-number active">1</a>
+                        <a href="#" class="page-number">2</a>
+                        <a href="#" class="page-number">3</a>
+                        <span class="page-dots">...</span>
+                        <a href="#" class="page-number">8</a>
+                        <a href="#" class="page-next"
+                            ><i class="fas fa-angle-right"></i
+                        ></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Phần đăng ký tư vấn -->
+            <section class="consultation-cta">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2>Bạn cần tư vấn về các vấn đề pháp lý?</h2>
+                        <p>
+                            Đội ngũ luật sư chuyên nghiệp của chúng tôi sẵn sàng
+                            hỗ trợ bạn giải quyết mọi vấn đề pháp lý phức tạp.
+                        </p>
+                        <a href="#" class="btn-contact">Liên hệ ngay</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <section class="footer-info">
+                <h3>LUẬT LTV</h3>
+                <p>
+                    Công ty Luật chuyên nghiệp cung cấp các dịch vụ pháp
+                    lý toàn diện với đội ngũ luật sư giàu kinh nghiệm.
+                </p>
+                <address class="footer-contact">
+                    <p>
+                        <i
+                            class="fas fa-map-marker-alt"
+                            aria-hidden="true"
+                        ></i>
+                        123 Đường ABC, Quận 1, TP.HCM
+                    </p>
+                    <p>
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <a href="tel:0977616391">0977616391</a>
+                    </p>
+                    <p>
+                        <i
+                            class="fas fa-envelope"
+                            aria-hidden="true"
+                        ></i>
+                        <a href="mailto:info@ltvlaw.com"
+                            >info@ltvlaw.com</a
+                        >
+                    </p>
+                </address>
+            </section>
+
+            <nav class="footer-links">
+                <h3>Liên Kết Nhanh</h3>
+                <ul>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Về Chúng Tôi</a></li>
+                    <li><a href="#">Dịch Vụ</a></li>
+                    <li><a href="#">Đội Ngũ</a></li>
+                    <li><a href="#">Tuyển Dụng</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                </ul>
+            </nav>
+
+            <section class="footer-newsletter">
+                <h3>Đăng Ký Nhận Tin</h3>
+                <p>
+                    Đăng ký để nhận thông tin cập nhật pháp luật mới
+                    nhất
+                </p>
+                <form>
+                    <label
+                        for="newsletter-email"
+                        class="visually-hidden"
+                        >Email của bạn</label
+                    >
+                    <input
+                        type="email"
+                        id="newsletter-email"
+                        name="email"
+                        placeholder="Email của bạn"
+                        required
+                    />
+                    <button type="submit" class="btn-submit">
+                        Đăng Ký
+                    </button>
+                </form>
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Luật LTV. Tất cả quyền được bảo lưu.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"
+                    ><i class="fab fa-facebook-f" aria-hidden="true"></i
+                ></a>
+                <a href="#" aria-label="Twitter"
+                    ><i class="fab fa-twitter" aria-hidden="true"></i
+                ></a>
+                <a href="#" aria-label="LinkedIn"
+                    ><i
+                        class="fab fa-linkedin-in"
+                        aria-hidden="true"
+                    ></i
+                ></a>
+                <a href="#" aria-label="YouTube"
+                    ><i class="fab fa-youtube" aria-hidden="true"></i
+                ></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        <!-- CSS ẩn cho trình đọc màn hình -->
+        <style>
+            .visually-hidden {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                margin: -1px;
+                padding: 0;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                border: 0;
+            }
+        </style>
+    </body>
+</html>

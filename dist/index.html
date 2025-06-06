@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Công ty Luật LTV - Cung cấp dịch vụ pháp lý chuyên nghiệp"
+        />
+        <title>Luật LTV - Công ty Luật</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <script type="module" crossorigin src="/LTVLaw-12-5-2025/assets/main-Ds9_Q7QR.js"></script>
+        <link rel="stylesheet" crossorigin href="/LTVLaw-12-5-2025/assets/main-Cye3Qnzz.css">
+        <style>
+            /* Reset & Base Styles */
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                background: #f5f6fa;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            }
+            
+            /* Banner Section Update */
+            .service-banners {
+                background: white;
+                padding: 40px 0;
+                margin-bottom: 40px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            
+            .banner-grid {
+                display: grid;
+                grid-template-columns: 1.8fr 1.2fr;
+                gap: 30px;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            
+            .banner-main, .banner-sidebar-top, .banner-small {
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                background: white;
+            }
+            
+            .banner-main:hover, .banner-sidebar-top:hover, .banner-small:hover {
+                transform: translateY(-5px);
+            }
+            
+            .banner-main img, .banner-sidebar-top img, .banner-small img {
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                order: 1;
+                flex-shrink: 0;
+                display: block;
+                border-radius: 8px 8px 0 0;
+            }
+            
+            .banner-main img {
+                aspect-ratio: 16 / 9; /* Banner chính giữ 16:9 */
+            }
+            
+            .banner-sidebar-top img {
+                aspect-ratio: 5 / 3; /* Banner phụ dài hơn một chút */
+            }
+            
+            .banner-small img {
+                aspect-ratio: 4 / 3; /* Banner nhỏ vuông hơn */
+            }
+            
+            .banner-caption {
+                order: 2;
+                background: linear-gradient(135deg, #2c3e50, #34495e);
+                color: white;
+                padding: 15px 20px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 1.4;
+            }
+            
+            /* .banner-main .banner-caption {
+                font-size: 14px;
+                padding: 12px 20px;
+                max-height: 60px;
+            } */
+            
+            .banner-sidebar {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .banner-sidebar-bottom {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+                margin-top: 15px;
+            }
+            
+            /* News Layout */
+            .news-layout {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px 40px 20px;
+            }
+            
+            .news-section {
+                background: white;
+                border-radius: 12px;
+                margin-bottom: 40px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                overflow: hidden;
+                position: relative;
+            }
+            
+            /* Section Header - Simple & Clean */
+            .section-header {
+                background: #2c3e50;
+                color: white;
+                padding: 20px 30px;
+                margin: 0;
+            }
+            
+            .section-header h2 {
+                margin: 0;
+                font-size: 24px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .section-header h2 i {
+                font-size: 24px;
+                opacity: 0.9;
+            }
+            
+            /* Articles Grid */
+            .articles-grid {
+                display: grid;
+                grid-template-columns: 1.8fr 1.2fr;
+                gap: 30px;
+                padding: 30px;
+                min-height: 400px;
+            }
+            
+            /* Featured Article - Giữ tỷ lệ 16:9 cho bài nổi bật */
+            .featured-article {
+                border-radius: 12px;
+                overflow: hidden;
+                border: 1px solid #e1e8ed;
+                transition: all 0.3s ease;
+                display: flex;
+                flex-direction: column;
+                background: white;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            }
+            
+            .featured-article:hover {
+                box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+                transform: translateY(-2px);
+            }
+            
+            /* Featured Article - Giữ tỷ lệ 16:9 cho bài nổi bật */
+            .featured-article .image-container {
+                position: relative;
+                width: 100%;
+                aspect-ratio: 16 / 9;
+                overflow: hidden;
+                background: #f8f9fa;
+            }
+            
+            .featured-article img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                transition: transform 0.3s ease;
+                z-index: 1;
+            }
+            
+            .featured-article:hover img {
+                transform: scale(1.05);
+            }
+            
+            .featured-content {
+                padding: 25px 30px 30px 30px;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .featured-content h3 {
+                font-size: 22px;
+                font-weight: 600;
+                margin: 0 0 15px 0;
+                color: #2c3e50;
+                line-height: 1.4;
+            }
+            
+            .featured-content p {
+                color: #657786;
+                line-height: 1.6;
+                margin: 0 0 15px 0;
+                font-size: 15px;
+                flex: 1;
+            }
+            
+            .article-meta {
+                padding-top: 15px;
+                border-top: 1px solid #e1e8ed;
+                display: flex;
+                gap: 20px;
+                font-size: 13px;
+                color: #8899a6;
+                margin-top: auto;
+            }
+            
+            .article-meta span {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+            
+            .article-meta i {
+                color: #2c3e50;
+            }
+            
+            /* Sidebar Articles - Tỷ lệ 4:3 cho cân đối hơn */
+            .sidebar-articles {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .sidebar-article {
+                display: flex;
+                gap: 15px;
+                padding: 18px;
+                border: 1px solid #e1e8ed;
+                border-radius: 12px;
+                transition: all 0.3s ease;
+                flex: 1;
+                min-height: 0;
+                background: white;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            }
+            
+            .sidebar-article:hover {
+                background: #f7f9fa;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                transform: translateY(-1px);
+            }
+            
+            /* Sidebar Articles - Tỷ lệ 4:3 cho cân đối hơn */
+            .sidebar-article .image-container {
+                position: relative;
+                width: 100px;
+                aspect-ratio: 4 / 3;
+                overflow: hidden;
+                border-radius: 8px;
+                flex-shrink: 0;
+                background: #f8f9fa;
+            }
+            
+            .sidebar-article img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                transition: transform 0.3s ease;
+                z-index: 1;
+            }
+            
+            .sidebar-article:hover img {
+                transform: scale(1.08);
+            }
+            
+            .sidebar-article-content h4 {
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0 0 8px 0;
+                color: #2c3e50;
+                line-height: 1.3;
+            }
+            
+            .sidebar-article-content .article-date {
+                font-size: 12px;
+                color: #8899a6;
+                margin: 0;
+            }
+            
+            /* More Articles - Tỷ lệ 4:3 cho cards nhỏ */
+            .more-articles {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                padding: 0 30px 30px 30px;
+                border-top: 1px solid #e1e8ed;
+                margin-top: 20px;
+                padding-top: 25px;
+            }
+            
+            .article-card {
+                display: flex;
+                gap: 15px;
+                padding: 15px;
+                border: 1px solid #e1e8ed;
+                border-radius: 12px;
+                transition: all 0.3s ease;
+                background: white;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            }
+            
+            .article-card:hover {
+                background: #f7f9fa;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                transform: translateY(-1px);
+            }
+            
+            /* More Articles - Tỷ lệ 4:3 cho cards nhỏ */
+            .article-card .image-container {
+                position: relative;
+                width: 90px;
+                aspect-ratio: 4 / 3;
+                overflow: hidden;
+                border-radius: 8px;
+                flex-shrink: 0;
+                background: #f8f9fa;
+            }
+            
+            .article-card img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                transition: transform 0.3s ease;
+                z-index: 1;
+            }
+            
+            .article-card:hover img {
+                transform: scale(1.08);
+            }
+            
+            .article-card-content h5 {
+                font-size: 14px;
+                font-weight: 600;
+                margin: 0 0 6px 0;
+                color: #2c3e50;
+                line-height: 1.3;
+            }
+            
+            .article-card-content .article-date {
+                font-size: 11px;
+                color: #8899a6;
+                margin: 0;
+            }
+            
+            /* Loading & Empty States */
+            .loading-spinner {
+                text-align: center;
+                padding: 50px 20px;
+                color: #8899a6;
+            }
+            
+            .loading-spinner i {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            
+            .no-articles {
+                text-align: center;
+                padding: 50px 20px;
+                color: #8899a6;
+                font-style: italic;
+            }
+            
+            .no-articles i {
+                font-size: 36px;
+                margin-bottom: 10px;
+                color: #ccd6dd;
+            }
+            
+            /* Footer Styles */
+            footer {
+                background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+                color: white;
+                margin-top: 60px;
+                padding: 50px 0 20px 0;
+                position: relative;
+            }
+            
+            footer::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 4px;
+                background: linear-gradient(90deg, #3498db, #e74c3c, #f39c12, #27ae60);
+            }
+            
+            .footer-content {
+                display: grid;
+                grid-template-columns: 2fr 1fr 1fr 1fr;
+                gap: 40px;
+                margin-bottom: 40px;
+            }
+            
+            .footer-section h3 {
+                color: white;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                position: relative;
+                padding-bottom: 10px;
+            }
+            
+            .footer-section h3::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 40px;
+                height: 2px;
+                background: #3498db;
+            }
+            
+            .footer-section h4 {
+                color: #ecf0f1;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 15px;
+                position: relative;
+                padding-bottom: 8px;
+            }
+            
+            .footer-section h4::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 30px;
+                height: 2px;
+                background: #e74c3c;
+            }
+            
+            .footer-section p {
+                color: #bdc3c7;
+                line-height: 1.6;
+                margin-bottom: 20px;
+                font-size: 14px;
+            }
+            
+            .footer-contact {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                margin-top: 10px;
+            }
+            
+            .footer-contact p {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                color: #ecf0f1;
+                font-size: 15px;
+                transition: color 0.3s ease;
+            }
+            
+            .footer-contact p:hover {
+                color: #3498db;
+            }
+            
+            .footer-contact i {
+                width: 20px;
+                margin-right: 12px;
+                color: #3498db;
+                font-size: 14px;
+            }
+            
+            .footer-section ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .footer-section ul li {
+                margin-bottom: 10px;
+            }
+            
+            .footer-section ul li a {
+                color: #bdc3c7;
+                text-decoration: none;
+                font-size: 14px;
+                transition: all 0.3s ease;
+                padding: 5px 0;
+                display: block;
+                position: relative;
+            }
+            
+            .footer-section ul li a:hover {
+                color: #3498db;
+                padding-left: 10px;
+            }
+            
+            .footer-section ul li a::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 0;
+                height: 2px;
+                background: #3498db;
+                transition: width 0.3s ease;
+            }
+            
+            .footer-section ul li a:hover::before {
+                width: 6px;
+            }
+            
+            .footer-bottom {
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 25px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            
+            .footer-bottom p {
+                margin: 0;
+                color: #95a5a6;
+                font-size: 14px;
+            }
+            
+            .social-links {
+                display: flex;
+                gap: 15px;
+            }
+            
+            .social-links a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background: rgba(255, 255, 255, 0.1);
+                color: #bdc3c7;
+                border-radius: 50%;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                font-size: 16px;
+            }
+            
+            .social-links a:hover {
+                background: #3498db;
+                color: white;
+                transform: translateY(-3px);
+            }
+            
+            .social-links a.facebook:hover {
+                background: #3b5998;
+            }
+            
+            .social-links a.youtube:hover {
+                background: #ff0000;
+            }
+            
+            .social-links a.linkedin:hover {
+                background: #0077b5;
+            }
+            
+            .social-links a.zalo:hover {
+                background: #0180C7;
+            }
+            
+            /* Responsive Design - Enhanced với tỷ lệ chuẩn */
+            @media (max-width: 768px) {
+                .banner-grid {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
+                
+                .banner-main img,
+                .banner-sidebar-top img,
+                .banner-small img {
+                    aspect-ratio: 16 / 9;
+                }
+                
+                .banner-sidebar-bottom {
+                    grid-template-columns: 1fr 1fr;
+                }
+                
+                .articles-grid {
+                    grid-template-columns: 1fr;
+                    gap: 25px;
+                    padding: 20px;
+                }
+                
+                /* Featured article giữ tỷ lệ 16:9 */
+                .featured-article .image-container {
+                    aspect-ratio: 16 / 9;
+                }
+                
+                .more-articles {
+                    grid-template-columns: 1fr;
+                    padding: 0 20px 20px 20px;
+                }
+                
+                .article-card {
+                    flex-direction: column;
+                    text-align: left;
+                }
+                
+                /* Mobile: cards dùng 16:9 cho đẹp hơn */
+                .article-card .image-container {
+                    width: 100%;
+                    aspect-ratio: 16 / 9;
+                    margin: 0;
+                }
+                
+                /* Sidebar articles giữ tỷ lệ 4:3 nhưng to hơn */
+                .sidebar-article .image-container {
+                    width: 120px;
+                    aspect-ratio: 4 / 3;
+                }
+                
+                .section-header {
+                    padding: 15px 20px;
+                }
+                
+                .section-header h2 {
+                    font-size: 20px;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .news-layout {
+                    padding: 0 10px 30px 10px;
+                }
+                
+                .service-banners {
+                    padding: 20px 0;
+                }
+                
+                .banner-grid {
+                    padding: 0 10px;
+                }
+                
+                .banner-main img {
+                    height: 180px;
+                }
+                
+                .banner-sidebar-top img {
+                    height: 120px;
+                }
+                
+                .banner-small img {
+                    height: 80px;
+                }
+                
+                .banner-sidebar-bottom {
+                    grid-template-columns: 1fr;
+                }
+                
+                .section-header {
+                    padding: 12px 15px;
+                }
+                
+                .section-header h2 {
+                    font-size: 18px;
+                }
+                
+                .articles-grid {
+                    padding: 15px;
+                }
+                
+                /* Footer Mobile */
+                .footer-content {
+                    grid-template-columns: 1fr;
+                    gap: 25px;
+                }
+                
+                .footer-section:first-child {
+                    grid-column: span 1;
+                }
+                
+                footer {
+                    padding: 40px 0 15px 0;
+                }
+                
+                .footer-section h3 {
+                    font-size: 20px;
+                }
+                
+                .footer-section h4 {
+                    font-size: 16px;
+                }
+                
+                .social-links {
+                    justify-content: center;
+                }
+                
+                .more-articles {
+                    grid-template-columns: 1fr;
+                    padding: 0 15px 20px 15px;
+                }
+            }
+            
+            /* General Image Improvements */
+            .image-container {
+                position: relative;
+                isolation: isolate; /* Tạo stacking context mới */
+            }
+            
+            .image-container::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0,0,0,0.02);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                z-index: 2;
+                pointer-events: none;
+            }
+            
+            .featured-article:hover .image-container::before,
+            .sidebar-article:hover .image-container::before,
+            .article-card:hover .image-container::before {
+                opacity: 1;
+            }
+            
+            /* Đảm bảo content không che chắn ảnh */
+            .featured-content,
+            .sidebar-article-content,
+            .article-card-content {
+                position: relative;
+                z-index: 1;
+                background: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <address class="contact-info">
+                        <span
+                            ><i class="fas fa-phone" aria-hidden="true"></i>
+                            <a href="tel:0977616391">0977616391</a></span
+                        >
+                        <span
+                            ><i class="fas fa-envelope" aria-hidden="true"></i>
+                            <a href="mailto:info@ltvlaw.com">info@ltvlaw.com</a></span
+                        >
+                        <span
+                            ><i class="far fa-clock" aria-hidden="true"></i> Thứ Hai -
+                            Thứ Bảy 7:30 - 17:30</span
+                        >
+                    </address>
+                </div>
+            </div>
+            <div class="main-header">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img
+                                src="./image/thanh-lap-cong-ty-co-phan.jpg"
+                                alt="Luật LTV Logo"
+                            />
+                        </a>
+                    </div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="#">VỀ LUẬT LTV</a></li>
+                            <li class="has-submenu">
+                                <a href="#"
+                                    >ĐỘI NGŨ LUẬT SƯ <i class="fas fa-chevron-down"></i
+                                ></a>
+                                <ul class="submenu">
+                                    <li><a href="#">Nhân Sự Pháp Lý</a></li>
+                                    <li><a href="#">Nhân Sự Vận Hành</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">DỊCH VỤ</a></li>
+                            <li><a href="#">LĨNH VỰC</a></li>
+                            <li><a href="#">KIẾN THỨC</a></li>
+                            <li><a href="#">TUYỂN DỤNG</a></li>
+                            <li><a href="#">LIÊN HỆ</a></li>
+                            <li class="language">
+                                <a href="#"
+                                    ><img
+                                        src="./image/thanh-lap-cong-ty-co-phan.jpg"
+                                        alt="Tiếng Việt"
+                                /></a>
+                                <a href="#"
+                                    ><img
+                                        src="./image/thanh-lap-cong-ty-co-phan.jpg"
+                                        alt="English"
+                                /></a>
+                                <a href="#"
+                                    ><img
+                                        src="./image/thanh-lap-cong-ty-co-phan.jpg"
+                                        alt="中文"
+                                /></a>
+                            </li>
+                            <li class="search-icon">
+                                <a href="#"
+                                    ><i class="fas fa-search" aria-hidden="true"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Banner Section -->
+            <section class="service-banners">
+                <div class="container">
+                    <div class="banner-grid">
+                        <div class="banner-main">
+                            <img
+                                src="./image/thanh-lap-cong-ty-co-phan.jpg"
+                                alt="Dịch vụ kế toán"
+                            />
+                            <div class="banner-caption">
+                                <p>
+                                    Dịch Vụ Kế Toán (Báo Cáo Thuế) Trọn Gói - Từ
+                                    500.000đ/tháng
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="banner-sidebar">
+                            <div class="banner-sidebar-top">
+                                <img
+                                    src="./image/thanh-lap-cong-ty-co-phan.jpg"
+                                    alt="Thành lập công ty"
+                                />
+                                <div class="banner-caption">
+                                    <p>
+                                        Dịch vụ thành lập công ty, doanh nghiệp
+                                        Giá Rẻ -【250.000đ】
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="banner-sidebar-bottom">
+                                <div class="banner-small">
+                                    <img
+                                        src="./image/thanh-lap-cong-ty-co-phan.jpg"
+                                        alt="Đăng ký kinh doanh"
+                                    />
+                                    <div class="banner-caption">
+                                        <p>
+                                            Dịch Vụ Đăng Ký Kinh Doanh Hộ Cá Thể
+                                            2025 - 1.500.000đ
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="banner-small">
+                                    <img
+                                        src="./image/thanh-lap-cong-ty-co-phan.jpg"
+                                        alt="Đầu tư nước ngoài"
+                                    />
+                                    <div class="banner-caption">
+                                        <p>
+                                            Dịch vụ thành lập công ty có vốn đầu
+                                            tư Nước Ngoài - Chỉ 15.000.000đ
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- News Layout -->
+            <div class="news-layout">
+                <!-- Bài viết mới -->
+                <section class="news-section" id="category-bai-viet-moi">
+                    <header class="section-header">
+                        <h2><i class="fas fa-newspaper"></i> Bài viết mới</h2>
+                    </header>
+                    <div class="articles-grid">
+                        <div class="featured-article" id="featured-bai-viet-moi">
+                            <div class="loading-spinner">
+                                <i class="fas fa-spinner fa-spin"></i> Đang tải bài viết...
+                            </div>
+                        </div>
+                        <div class="sidebar-articles" id="sidebar-bai-viet-moi">
+                            <div class="loading-spinner">Đang tải...</div>
+                        </div>
+                    </div>
+                    <div class="more-articles" id="more-bai-viet-moi"></div>
+                </section>
+
+                <!-- Pháp luật doanh nghiệp -->
+                <section class="news-section" id="category-phap-luat-doanh-nghiep">
+                    <header class="section-header">
+                        <h2><i class="fas fa-building"></i> Pháp luật doanh nghiệp</h2>
+                    </header>
+                    <div class="articles-grid">
+                        <div class="featured-article" id="featured-phap-luat-doanh-nghiep">
+                            <div class="loading-spinner">
+                                <i class="fas fa-spinner fa-spin"></i> Đang tải bài viết...
+                            </div>
+                        </div>
+                        <div class="sidebar-articles" id="sidebar-phap-luat-doanh-nghiep">
+                            <div class="loading-spinner">Đang tải...</div>
+                        </div>
+                    </div>
+                    <div class="more-articles" id="more-phap-luat-doanh-nghiep"></div>
+                </section>
+
+                <!-- Sở hữu trí tuệ -->
+                <section class="news-section" id="category-so-huu-tri-tue">
+                    <header class="section-header">
+                        <h2><i class="fas fa-lightbulb"></i> Sở hữu trí tuệ</h2>
+                    </header>
+                    <div class="articles-grid">
+                        <div class="featured-article" id="featured-so-huu-tri-tue">
+                            <div class="loading-spinner">
+                                <i class="fas fa-spinner fa-spin"></i> Đang tải bài viết...
+                            </div>
+                        </div>
+                        <div class="sidebar-articles" id="sidebar-so-huu-tri-tue">
+                            <div class="loading-spinner">Đang tải...</div>
+                        </div>
+                    </div>
+                    <div class="more-articles" id="more-so-huu-tri-tue"></div>
+                </section>
+
+                <!-- Tư vấn đầu tư -->
+                <section class="news-section" id="category-tu-van-dau-tu">
+                    <header class="section-header">
+                        <h2><i class="fas fa-chart-line"></i> Tư vấn đầu tư</h2>
+                    </header>
+                    <div class="articles-grid">
+                        <div class="featured-article" id="featured-tu-van-dau-tu">
+                            <div class="loading-spinner">
+                                <i class="fas fa-spinner fa-spin"></i> Đang tải bài viết...
+                            </div>
+                        </div>
+                        <div class="sidebar-articles" id="sidebar-tu-van-dau-tu">
+                            <div class="loading-spinner">Đang tải...</div>
+                        </div>
+                    </div>
+                    <div class="more-articles" id="more-tu-van-dau-tu"></div>
+                </section>
+
+                <!-- Luật lao động -->
+                <section class="news-section" id="category-luat-lao-dong">
+                    <header class="section-header">
+                        <h2><i class="fas fa-users"></i> Luật lao động</h2>
+                    </header>
+                    <div class="articles-grid">
+                        <div class="featured-article" id="featured-luat-lao-dong">
+                            <div class="loading-spinner">
+                                <i class="fas fa-spinner fa-spin"></i> Đang tải bài viết...
+                            </div>
+                        </div>
+                        <div class="sidebar-articles" id="sidebar-luat-lao-dong">
+                            <div class="loading-spinner">Đang tải...</div>
+                        </div>
+                    </div>
+                    <div class="more-articles" id="more-luat-lao-dong"></div>
+                </section>
+
+                <!-- Luật thuế -->
+                <section class="news-section" id="category-luat-thue">
+                    <header class="section-header">
+                        <h2><i class="fas fa-calculator"></i> Luật thuế</h2>
+                    </header>
+                    <div class="articles-grid">
+                        <div class="featured-article" id="featured-luat-thue">
+                            <div class="loading-spinner">
+                                <i class="fas fa-spinner fa-spin"></i> Đang tải bài viết...
+                            </div>
+                        </div>
+                        <div class="sidebar-articles" id="sidebar-luat-thue">
+                            <div class="loading-spinner">Đang tải...</div>
+                        </div>
+                    </div>
+                    <div class="more-articles" id="more-luat-thue"></div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Luật LTV</h3>
+                        <p>Công ty luật hàng đầu chuyên cung cấp dịch vụ pháp lý toàn diện cho doanh nghiệp và cá nhân. Với đội ngũ luật sư chuyên nghiệp và kinh nghiệm, chúng tôi cam kết mang đến giải pháp pháp lý tối ưu.</p>
+                        <div class="footer-contact">
+                            <p><i class="fas fa-phone"></i> <a href="tel:0977616391" style="color: inherit;">0977616391</a></p>
+                            <p><i class="fas fa-envelope"></i> <a href="mailto:info@ltvlaw.com" style="color: inherit;">info@ltvlaw.com</a></p>
+                            <p><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận XYZ, TP.HCM</p>
+                            <p><i class="fas fa-clock"></i> Thứ 2 - Thứ 7: 8:00 - 17:30</p>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Dịch vụ chính</h4>
+                        <ul>
+                            <li><a href="#">Thành lập doanh nghiệp</a></li>
+                            <li><a href="#">Tư vấn pháp lý</a></li>
+                            <li><a href="#">Sở hữu trí tuệ</a></li>
+                            <li><a href="#">Luật lao động</a></li>
+                            <li><a href="#">Luật thuế</a></li>
+                            <li><a href="#">Tranh tụng</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Lĩnh vực</h4>
+                        <ul>
+                            <li><a href="#">Pháp luật doanh nghiệp</a></li>
+                            <li><a href="#">Tư vấn đầu tư</a></li>
+                            <li><a href="#">Bảo hiểm xã hội</a></li>
+                            <li><a href="#">Hợp đồng thương mại</a></li>
+                            <li><a href="#">Tài chính ngân hàng</a></li>
+                            <li><a href="#">Bất động sản</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Về chúng tôi</h4>
+                        <ul>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Đội ngũ luật sư</a></li>
+                            <li><a href="#">Tin tức & Sự kiện</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Công ty Luật LTV. Tất cả quyền được bảo lưu.</p>
+                    <div class="social-links">
+                        <a href="#" class="facebook" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="youtube" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="linkedin" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="zalo" title="Zalo">
+                            <i class="fas fa-comment"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            // Dynamic Content Loading for News Layout
+            const API_URL = 'http://localhost:3000'; // Standard API URL
+            
+            // Category mapping - chỉ sử dụng categories có thật trong database
+            const categoryMapping = {
+                'phap-luat-doanh-nghiep': 'Pháp luật doanh nghiệp',
+                'so-huu-tri-tue': 'Pháp luật sở hữu trí tuệ',
+                'tu-van-phap-ly': 'Tư vấn pháp lý',
+                'thu-tuc-hanh-chinh': 'Thủ tục hành chính'
+            };
+            
+            // Mapping sections that don't have data to show empty state
+            const emptySections = ['bai-viet-moi', 'tu-van-dau-tu', 'luat-lao-dong', 'luat-thue'];
+            
+            // Load dynamic content for news layout
+            async function loadDynamicContent() {
+                console.log('🚀 Loading dynamic content for news layout...');
+                
+                try {
+                    // Load categories first
+                    const categoriesResponse = await fetch(`${API_URL}/api/categories/public`);
+                    const categoriesData = await categoriesResponse.json();
+                    
+                    if (!categoriesData.success) {
+                        throw new Error('Failed to load categories');
+                    }
+                    
+                    const categories = categoriesData.data;
+                    console.log('📂 Categories loaded:', categories.length);
+                    
+                    // Load posts for each category that has data
+                    for (const [slugKey, categoryName] of Object.entries(categoryMapping)) {
+                        const category = categories.find(cat => cat.name === categoryName);
+                        if (category) {
+                            await loadCategoryPosts(slugKey, category._id, categoryName);
+                        } else {
+                            console.warn(`❓ Category not found: ${categoryName}`);
+                            showEmptyCategory(slugKey);
+                        }
+                    }
+                    
+                    // Show empty state for sections without data
+                    emptySections.forEach(slugKey => {
+                        showEmptyCategory(slugKey);
+                    });
+                    
+                } catch (error) {
+                    console.error('❌ Error loading dynamic content:', error);
+                    console.log('🔄 Loading fallback content...');
+                    loadFallbackContent();
+                }
+            }
+            
+            // Load posts for a specific category
+            async function loadCategoryPosts(slugKey, categoryId, categoryName) {
+                try {
+                    console.log(`📰 Loading posts for: ${categoryName}`);
+                    
+                    const postsResponse = await fetch(`${API_URL}/api/posts/public?category=${categoryId}&limit=10`);
+                    const postsData = await postsResponse.json();
+                    
+                    if (!postsData.success) {
+                        throw new Error(`Failed to load posts for ${categoryName}`);
+                    }
+                    
+                    // Fix: API returns data.posts, not data.data
+                    const posts = postsData.data.posts || [];
+                    console.log(`✅ Loaded ${posts.length} posts for ${categoryName}:`, posts);
+                    
+                    updateCategorySection(slugKey, posts, categoryName);
+                    
+                } catch (error) {
+                    console.error(`❌ Error loading posts for ${categoryName}:`, error);
+                    showEmptyCategory(slugKey);
+                }
+            }
+            
+            // Update category section with posts
+            function updateCategorySection(slugKey, posts, categoryName) {
+                const section = document.getElementById(`category-${slugKey}`);
+                if (!section) return;
+                
+                // Update featured article (first post)
+                const featuredArticle = section.querySelector(`#featured-${slugKey}`);
+                if (featuredArticle) {
+                    if (posts.length > 0) {
+                        const post = posts[0];
+                        // Safely handle content extraction
+                        const description = post.description || 
+                                          (post.content ? post.content.substring(0, 150) + '...' : 'Nội dung đang được cập nhật...');
+                        
+                        featuredArticle.innerHTML = `
+                            <div class="image-container">
+                                <img src="${post.thumbnail || post.image || './image/thanh-lap-cong-ty-co-phan.jpg'}" alt="${post.title}" />
+                            </div>
+                            <div class="featured-content">
+                                <h3>${post.title}</h3>
+                                <p>${description}</p>
+                                <div class="article-meta">
+                                    <span><i class="fas fa-calendar"></i> ${formatDate(post.publishDate || post.date)}</span>
+                                    <span><i class="fas fa-user"></i> ${post.author?.fullName || post.author || 'Admin'}</span>
+                                </div>
+                            </div>
+                        `;
+                    } else {
+                        featuredArticle.innerHTML = `
+                            <div class="no-articles">
+                                <i class="fas fa-newspaper"></i>
+                                <p>Chưa có bài viết nào trong danh mục ${categoryName}</p>
+                            </div>
+                        `;
+                    }
+                }
+                
+                // Update sidebar articles (posts 2-4)
+                const sidebarArticles = section.querySelector(`#sidebar-${slugKey}`);
+                if (sidebarArticles) {
+                    if (posts.length > 1) {
+                        const sidebarPosts = posts.slice(1, 4);
+                        sidebarArticles.innerHTML = sidebarPosts.map(post => `
+                            <article class="sidebar-article">
+                                <div class="image-container">
+                                    <img src="${post.thumbnail || post.image || './image/thanh-lap-cong-ty-co-phan.jpg'}" alt="${post.title}" />
+                                </div>
+                                <div class="sidebar-article-content">
+                                    <h4>${post.title}</h4>
+                                    <p class="article-date">${formatDate(post.publishDate || post.date)}</p>
+                                </div>
+                            </article>
+                        `).join('');
+                    } else {
+                        sidebarArticles.innerHTML = '<div class="no-articles">Không có bài viết phụ</div>';
+                    }
+                }
+                
+                // Update more articles (posts 5+)
+                const moreArticles = section.querySelector(`#more-${slugKey}`);
+                if (moreArticles) {
+                    if (posts.length > 4) {
+                        const morePosts = posts.slice(4, 7); // Chỉ lấy 3 bài (từ bài thứ 5 đến 7)
+                        moreArticles.innerHTML = morePosts.map(post => `
+                            <article class="article-card">
+                                <div class="image-container">
+                                    <img src="${post.thumbnail || post.image || './image/thanh-lap-cong-ty-co-phan.jpg'}" alt="${post.title}" />
+                                </div>
+                                <div class="article-card-content">
+                                    <h5>${post.title}</h5>
+                                    <p class="article-date">${formatDate(post.publishDate || post.date)}</p>
+                                </div>
+                            </article>
+                        `).join('');
+                    } else {
+                        moreArticles.innerHTML = '';
+                    }
+                }
+            }
+            
+            // Show empty category message
+            function showEmptyCategory(slugKey) {
+                const section = document.getElementById(`category-${slugKey}`);
+                if (!section) {
+                    console.warn(`❓ Section not found: category-${slugKey}`);
+                    return;
+                }
+                
+                const featuredArticle = section.querySelector(`#featured-${slugKey}`);
+                if (featuredArticle) {
+                    featuredArticle.innerHTML = `
+                        <div class="no-articles">
+                            <i class="fas fa-newspaper"></i>
+                            <p>Chưa có bài viết nào trong danh mục này</p>
+                        </div>
+                    `;
+                }
+                
+                const sidebarArticles = section.querySelector(`#sidebar-${slugKey}`);
+                if (sidebarArticles) {
+                    sidebarArticles.innerHTML = '<div class="no-articles">Chưa có bài viết</div>';
+                }
+                
+                const moreArticles = section.querySelector(`#more-${slugKey}`);
+                if (moreArticles) {
+                    moreArticles.innerHTML = '';
+                }
+            }
+            
+            // Show global error message
+            function showGlobalError() {
+                const newsLayout = document.querySelector('.news-layout');
+                if (newsLayout) {
+                    newsLayout.innerHTML = `
+                        <div class="no-articles" style="text-align: center; padding: 60px 20px;">
+                            <i class="fas fa-exclamation-triangle" style="font-size: 48px; color: #e74c3c; margin-bottom: 20px;"></i>
+                            <h3>Không thể tải nội dung</h3>
+                            <p>Đã xảy ra lỗi khi tải bài viết. Vui lòng thử lại sau.</p>
+                            <button onclick="location.reload()" style="background: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-top: 15px;">
+                                <i class="fas fa-refresh"></i> Tải lại trang
+                            </button>
+                        </div>
+                    `;
+                }
+            }
+            
+            // Format date helper
+            function formatDate(dateString) {
+                if (!dateString) return 'Chưa xác định';
+                
+                try {
+                    // Handle different date formats
+                    let date;
+                    
+                    // If already formatted as DD/MM/YYYY, return as is
+                    if (dateString.includes('/') && dateString.split('/').length === 3) {
+                        return dateString;
+                    }
+                    
+                    // Parse ISO date string
+                    date = new Date(dateString);
+                    
+                    
+                    // Check if date is valid
+                    if (isNaN(date.getTime())) {
+                        return 'Ngày không hợp lệ';
+                    }
+                    
+                    // Format as Vietnamese date
+                    const day = date.getDate().toString().padStart(2, '0');
+                    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+                    const year = date.getFullYear();
+                    
+                    return `${day}/${month}/${year}`;
+                } catch (error) {
+                    console.error('Date formatting error:', error);
+                    return 'Ngày không hợp lệ';
+                }
+            }
+            
+            // Auto-start when page loads
+            document.addEventListener('DOMContentLoaded', function() {
+                console.log('📄 Page loaded, starting dynamic content loading...');
+                
+                // Add connection status indicator
+                addStatusIndicator();
+                
+                loadDynamicContent();
+            });
+            
+            // Add status indicator
+            function addStatusIndicator() {
+                const statusDiv = document.createElement('div');
+                statusDiv.id = 'connection-status';
+                statusDiv.style.cssText = `
+                    position: fixed;
+                    top: 10px;
+                    right: 10px;
+                    padding: 8px 12px;
+                    background: #f39c12;
+                    color: white;
+                    border-radius: 6px;
+                    font-size: 12px;
+                    z-index: 1000;
+                    display: none;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+                `;
+                statusDiv.innerHTML = '🔄 Đang kết nối...';
+                document.body.appendChild(statusDiv);
+                
+                // Show status
+                statusDiv.style.display = 'block';
+                
+                // Test connection and update status
+                setTimeout(() => {
+                    fetch(`${API_URL}/api/posts/public?limit=1`)
+                        .then(response => response.ok ? response.json() : Promise.reject('No connection'))
+                        .then(() => {
+                            statusDiv.innerHTML = '✅ Kết nối thành công';
+                            statusDiv.style.background = '#27ae60';
+                            setTimeout(() => statusDiv.style.display = 'none', 3000);
+                        })
+                        .catch(() => {
+                            statusDiv.innerHTML = '⚠️ Server offline - Hiển thị dữ liệu mẫu';
+                            statusDiv.style.background = '#e74c3c';
+                            setTimeout(() => statusDiv.style.display = 'none', 5000);
+                        });
+                }, 1000);
+            }
+            
+            // Fallback content when API is not available
+            function loadFallbackContent() {
+                console.log('📦 Displaying sample content...');
+                
+                // Add retry button to news layout
+                const newsLayout = document.querySelector('.news-layout');
+                if (newsLayout && !document.getElementById('retry-banner')) {
+                    const retryBanner = document.createElement('div');
+                    retryBanner.id = 'retry-banner';
+                    retryBanner.style.cssText = `
+                        background: linear-gradient(135deg, #f39c12, #e67e22);
+                        color: white;
+                        padding: 15px 20px;
+                        border-radius: 8px;
+                        margin-bottom: 20px;
+                        text-align: center;
+                        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                    `;
+                    retryBanner.innerHTML = `
+                        <div style="margin-bottom: 10px;">
+                            <i class="fas fa-exclamation-triangle" style="font-size: 20px; margin-right: 8px;"></i>
+                            <strong>Server đang offline</strong>
+                        </div>
+                        <div style="font-size: 14px; margin-bottom: 15px;">
+                            Hiện đang hiển thị dữ liệu mẫu. Server có thể đang bảo trì hoặc khởi động.
+                        </div>
+                        <button onclick="location.reload()" style="
+                            background: white;
+                            color: #f39c12;
+                            border: none;
+                            padding: 8px 16px;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            font-weight: 600;
+                            margin-right: 10px;
+                        ">
+                            <i class="fas fa-refresh"></i> Thử lại
+                        </button>
+                        <button onclick="this.parentElement.style.display='none'" style="
+                            background: rgba(255,255,255,0.2);
+                            color: white;
+                            border: none;
+                            padding: 8px 16px;
+                            border-radius: 4px;
+                            cursor: pointer;
+                        ">
+                            <i class="fas fa-times"></i> Đóng
+                        </button>
+                    `;
+                    newsLayout.insertBefore(retryBanner, newsLayout.firstChild);
+                }
+                
+                const samplePosts = [
+                    {
+                        title: "Hướng dẫn thành lập công ty TNHH 2025",
+                        description: "Quy trình chi tiết và các giấy tờ cần thiết để thành lập công ty TNHH theo quy định mới nhất.",
+                        author: { fullName: "Luật sư LTV" },
+                        publishDate: "2025-06-05",
+                        thumbnail: "./image/thanh-lap-cong-ty-co-phan.jpg"
+                    },
+                    {
+                        title: "Quyền và nghĩa vụ của thành viên công ty TNHH",
+                        description: "Tìm hiểu về quyền và nghĩa vụ của các thành viên trong công ty TNHH.",
+                        author: { fullName: "Admin" },
+                        publishDate: "2025-06-05",
+                        thumbnail: "./image/thanh-lap-cong-ty-co-phan.jpg"
+                    },
+                    {
+                        title: "Thủ tục tăng vốn điều lệ công ty",
+                        description: "Hướng dẫn các bước thực hiện tăng vốn điều lệ cho doanh nghiệp.",
+                        author: { fullName: "Admin" },
+                        publishDate: "2025-06-05",
+                        thumbnail: "./image/thanh-lap-cong-ty-co-phan.jpg"
+                    },
+                    {
+                        title: "Cách tính thuế thu nhập doanh nghiệp 2025",
+                        description: "Hướng dẫn tính thuế thu nhập doanh nghiệp theo quy định mới.",
+                        author: { fullName: "Admin" },
+                        publishDate: "2025-06-05",
+                        thumbnail: "./image/thanh-lap-cong-ty-co-phan.jpg"
+                    }
+                ];
+                
+                // Load sample content for main categories
+                Object.keys(categoryMapping).forEach((slugKey, index) => {
+                    const posts = samplePosts.slice(0, 4); // Use sample posts
+                    updateCategorySection(slugKey, posts, categoryMapping[slugKey]);
+                });
+                
+                // Show empty for sections without mapping
+                emptySections.forEach(slugKey => {
+                    showEmptyCategory(slugKey);
+                });
+            }
+        </script>
+    </body>
+</html>
